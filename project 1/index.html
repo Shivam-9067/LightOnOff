@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+<style>
+    body{
+        background-color: rgb(182, 182, 171);
+    }
+    #container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid; */
+        /* width: 50%; */
+        flex-direction: column;
+    }
+    #light {
+        /* width: 10%; */
+    }
+    #buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #btn{
+        margin: 50px;
+        width: 10%;
+        height: 40px;
+        background-color: black;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 450;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    #btn:hover{
+        background-color: white;
+        color: black;
+    }
+    p{
+        font-size: 1.4rem;
+        color: blueviolet;
+        font-weight: 400;
+    }
+</style>
+      
+    <div id="container">
+        <p>Can you can turn Off/On the Light</p>
+        <img src="img/Lightoff1.png" alt="" id="light">
+    </div>
+    <div id="buttons">
+
+        <button id="btn" onclick="document.getElementById('light').src='img/lighton1.png'">Turn on the Light</button>
+        <button id="btn"  onclick="document.getElementById('light').src='img/Lightoff1.png'">Turn off the Light</button>
+    </div>
+    
+
+</body>
+</html>
